@@ -60,7 +60,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 			String resetLink = generateResetToken(user);
 
 			SimpleMailMessage msg = new SimpleMailMessage();
-			msg.setFrom("gharbiameni17@gmail.com");
+			msg.setFrom("exemple@gmail.com");
 			msg.setTo(user.getEmail());
 
 			msg.setSubject("Welcome");
